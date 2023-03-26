@@ -1,0 +1,96 @@
+@import url(https://fonts.cdnfonts.com/css/product-sans);
+@font-face{font-family:'Work Sans';
+    src:url(../fonts/WorkSans-Light.ttf)}*{text-align:center;
+        font-family:'Product Sans',sans-serif;
+        user-select:none}
+            p{font-size:1.27em;font-weight:700;margin:.27em}
+            canvas{position:fixed;top:0;right:0;bottom:0;left:0;animation:load_in2 9s forwards}
+            button{background-color:transparent;color:#fff;box-shadow:none;border:none;font-size:1.9em;transition:color .5s;margin:1px}
+button:hover{cursor:pointer;
+    color:rgba(255,28,212,1)}
+body{background-color:#000;
+    overflow:auto;overflow-x:hidden;
+    font-size:1.3em;
+    padding:1em;
+    height:auto;margin:0}
+#wallpaper{background-image:url(0x000000);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    background-color:#000;
+    filter:brightness(70%);
+    z-index:-1;
+    position:fixed;
+    top:0;right:0;bottom:0;left:0}
+#nowplaying{color:#fff;
+    font-size:.9em}
+#audio-box{margin-top:.7em;
+    display:flex;
+    justify-content:center}
+#audio-container{width:fit-content;
+    background-color:rgba(255,255,255,.35);
+    text-align:center;
+    padding:.5em 1em .5em 1em;
+    border-radius:.5em;z-index:2;
+    backdrop-filter:blur(6px)}
+::-webkit-scrollbar{width:0;background:0 0}
+::-webkit-scrollbar-track{background:0 0}
+::-webkit-scrollbar-thumb{background:#fff;border-radius:5em}
+#loading{background-size:cover;
+    background-position:center;background-repeat:no-repeat;background-color:#000;
+    position:fixed;top:0;right:0;bottom:0;left:0;
+    animation:load_in 5s forwards}
+#box{margin:auto;
+    background-color:rgba(255,255,255,.35);
+    box-shadow:0 0 6px 6px rgba(255,255,255,.25);
+    backdrop-filter:blur(6px);
+    max-width:20em;
+    padding:.87em;
+    border-radius:1.1em;
+    animation:load_in2 3s forwards}
+.ec{font-family:'Segoe UI Emoji';
+    font-weight:initial!important;
+    font-size:1.27em}
+#progress{background-color:rgba(255,255,255,.3);
+    height:.65em;
+    border-radius:.5em;
+    box-shadow:0 0 3px 3px rgba(255,255,255,.1);
+    margin-right:20em}
+#img{height:10.5rem;
+    width:10.5rem;
+    border-radius:10em;
+    box-shadow:3px 3px 6px #000;
+    transition:all .2s ease-in-out}
+#img:hover{transform:scale(1.02);
+    box-shadow:4px 4px 8px #000;
+    border-radius:11em}
+.fa-circle{display:block;
+    width:15px;
+    height:15px;
+    opacity:.7;
+    border-radius:30%;
+    margin:.1rem;
+    animation:blink 1s linear infinite}
+#Description p{text-align:center;
+    font-size:.9em;
+    font-weight:700;
+    font-family:'Product Sans',Courier}
+#statusbox a{text-align:center;
+    display:block;
+    margin:.16em;
+    font-size:.9em;
+    font-weight:700;
+    font-family:'Product Sans',Courier;
+    text-decoration:none;
+    transition:all 1s ease-in-out}
+#statusbox{padding:.5rem;
+    margin:.45rem 0 .45rem 0;
+    border-radius:1rem;
+    border:solid #424242 3px;
+    background-color:rgba(66,66,66,.158);
+    font-size:1.15rem}
+#Profile{display:block}
+#spacer{width:100%;height:.2em}
+@keyframes load_in{from{background-color:#000}to{background-color:transparent}}
+@keyframes load_in2{from{opacity:0}to{opacity:1}}
+@keyframes blink{100%{transform:scale(1,1);opacity:30%}}

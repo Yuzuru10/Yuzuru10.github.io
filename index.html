@@ -1,6 +1,276 @@
 <!DOCTYPE html>
-<html>
+<html data-darkreader-mode="dynamic" data-darkreader-scheme="dark" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <style class="darkreader darkreader--fallback" media="screen"></style>
+    <style class="darkreader darkreader--text" media="screen"></style>
+    <style class="darkreader darkreader--invert" media="screen">.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], span[data-href^="https://www.hcaptcha.com/"] > #icon, #bit-notification-bar-iframe, ::-webkit-calendar-picker-indicator {
+        filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;}
+    </style>
+    <style class="darkreader darkreader--inline" media="screen">[data-darkreader-inline-bgcolor] {
+      background-color: var(--darkreader-inline-bgcolor) !important;}
+    [data-darkreader-inline-bgimage] {
+      background-image: var(--darkreader-inline-bgimage) !important;}
+    [data-darkreader-inline-border] {
+      border-color: var(--darkreader-inline-border) !important;}
+    [data-darkreader-inline-border-bottom] {
+      border-bottom-color: var(--darkreader-inline-border-bottom) !important;}
+    [data-darkreader-inline-border-left] {
+      border-left-color: var(--darkreader-inline-border-left) !important;}
+    [data-darkreader-inline-border-right] {
+      border-right-color: var(--darkreader-inline-border-right) !important;}
+    [data-darkreader-inline-border-top] {
+      border-top-color: var(--darkreader-inline-border-top) !important;}
+    [data-darkreader-inline-boxshadow] {
+      box-shadow: var(--darkreader-inline-boxshadow) !important;}
+    [data-darkreader-inline-color] {
+      color: var(--darkreader-inline-color) !important;}
+    [data-darkreader-inline-fill] {
+      fill: var(--darkreader-inline-fill) !important;}
+    [data-darkreader-inline-stroke] {
+      stroke: var(--darkreader-inline-stroke) !important;}
+    [data-darkreader-inline-outline] {
+      outline-color: var(--darkreader-inline-outline) !important;}
+    [data-darkreader-inline-stopcolor] {
+      stop-color: var(--darkreader-inline-stopcolor) !important;}
+    </style>
+
+    <style class="darkreader darkreader--variables" media="screen">:root {
+       --darkreader-neutral-background: #131516;
+       --darkreader-neutral-text: #d8d4cf;
+       --darkreader-selection-background: #004daa;
+       --darkreader-selection-text: #e8e6e3;}
+     </style>
+
+     <style 
+     class="darkreader darkreader--root-vars" media="screen">
+     </style>
+
+     <style class="darkreader darkreader--user-agent" media="screen">html {
+        background-color: #181a1b !important;}
+    html {
+        color-scheme: dark !important;}
+    html, body {
+        background-color: #181a1b;}
+    html, body {
+        border-color: #736b5e;
+        color: #e8e6e3;}
+    a {
+        color: #3391ff;}
+    table {
+        border-color: #545b5e;}
+    ::placeholder {
+        color: #b2aba1;}
+    input:-webkit-autofill,
+    textarea:-webkit-autofill,
+    select:-webkit-autofill {
+        background-color: #404400 !important;
+        color: #e8e6e3 !important;}
+    ::-webkit-scrollbar {
+        background-color: #202324;
+        color: #aba499;}
+    ::-webkit-scrollbar-thumb {
+        background-color: #454a4d;}
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #575e62;}
+    ::-webkit-scrollbar-thumb:active {
+        background-color: #484e51;}
+    ::-webkit-scrollbar-corner {
+        background-color: #181a1b;}*{scrollbar-color: #454a4d #202324;}
+    ::selection {
+        background-color: #004daa !important;
+        color: #e8e6e3 !important;}
+    ::-moz-selection {
+        background-color: #004daa !important;
+        color: #e8e6e3 !important;}
+      </style>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <link rel="stylesheet" href="assets/mainsite.css">
+      <style class="darkreader darkreader--cors" media="screen">*{text-align:center;font-family:'Product Sans',sans-serif;user-select:none}
+        p{font-size:1.27em;font-weight:700;margin:.27em}
+        canvas{position:fixed;top:0;right:0;bottom:0;left:0;animation:load_in2 9s forwards}
+        button{background-color:transparent;color:#fff;box-shadow:none;border:none;font-size:1.9em;transition:color .5s;margin:1px}
+        button:hover{cursor:pointer;color:rgba(255,28,212,1)}
+        body{background-color:#000;overflow:auto;overflow-x:hidden;font-size:1.3em;padding:1em;height:auto;margin:0}
+        #wallpaper{background-image:url('0x000000');
+        background-repeat:no-repeat;
+        background-position:center;
+        background-size:cover;
+        background-color:#000;
+        filter:brightness(70%);
+        z-index:-1;
+        position:fixed;
+        top:0;right:0;bottom:0;left:0}
+        #nowplaying{color:#fff;font-size:.9em}
+        #audio-box{margin-top:.7em;display:flex;justify-content:center}
+        #audio-container{width:fit-content;
+          background-color:rgba(255,255,255,.35);
+          text-align:center;
+          padding:.5em 1em .5em 1em;
+          border-radius:.5em;z-index:2;
+          backdrop-filter:blur(6px)}
+          ::-webkit-scrollbar{width:0;background:0 0}
+          ::-webkit-scrollbar-track{background:0 0}
+          ::-webkit-scrollbar-thumb{background:#fff;border-radius:5em}
+        #loading{background-size:cover;
+          background-position:center;
+          background-repeat:no-repeat;
+          background-color:#000;
+          position:fixed;top:0;right:0;bottom:0;left:0;animation:load_in 5s forwards}
+        #box{margin:auto;background-color:rgba(255,255,255,.35);box-shadow:0 0 6px 6px rgba(255,255,255,.25);
+          backdrop-filter:blur(6px);
+          max-width:20em;
+          padding:.87em;
+          border-radius:1.1em;
+          animation:load_in2 3s forwards}
+          .ec{font-family:'Segoe UI Emoji';
+          font-weight:initial!important;
+          font-size:1.27em}
+        #progress{background-color:rgba(255,255,255,.3);
+          height:.65em;
+          border-radius:.5em;
+         box-shadow:0 0 3px 3px rgba(255,255,255,.1);
+         margin-right:20em}
+         #img{height:10.5rem;
+          width:10.5rem;
+          border-radius:10em;
+          box-shadow:3px 3px 6px #000;
+          transition:all .2s ease-in-out}
+        #img:hover{transform:scale(1.02);
+          box-shadow:4px 4px 8px #000;
+          border-radius:11em}
+          .fa-circle{display:block;
+            width:15px;
+            height:15px;
+            opacity:.7;
+            border-radius:30%;
+            margin:.1rem;
+          animation:blink 1s linear infinite}
+        #Description p{text-align:center;
+          font-size:.9em;
+          font-weight:700;
+          font-family:'Product Sans',Courier}
+        #Profile{display:block}
+        #spacer{width:100%;height:.2em}
+        @keyframes load_in{from{background-color:#000}to{background-color:transparent}}
+        @keyframes load_in2{from{opacity:0}to{opacity:1}}
+        @keyframes blink{100%{transform:scale(1,1);opacity:30%}}
+        </style>
+      <style class="darkreader darkreader--sync" media="screen"></style>
+      <link rel="stylesheet" href="assets/emoji.min.css">
+      <style class="darkreader darkreader--cors" media="screen">
+      .ec{font-family: monospace;color: #000;}
+      ::placeholder {opacity: 0.5 !important;}
+      #edge-translate-panel-body,.MuiTypography-body1,.nfe-quote-text {
+          color: var(--darkreader-neutral-text) !important;}
+    gr-main-header {background-color: #0f3a48 !important;}
+    .tou-z65h9k,.tou-mignzq,.tou-1b6i2ox,
+    .tou-lnqlqk {
+        background-color: var(--darkreader-neutral-background) !important;}
+    .tou-75mvi {
+        background-color: #032029 !important;}
+    .tou-ta9e87,.tou-1w3fhi0,.tou-1b8t2us,.tou-py7lfi,.tou-1lpmd9d,.tou-1frrtv8,
+    .tou-17ezmgn {
+        background-color: #0a0a0a !important;}
+    .tou-uknfeu {
+        background-color: #231603 !important;}
+    .tou-6i3zyv {
+        background-color: #19576c !important;}
+    embed[type="application/pdf"]
+    { filter: invert(100%) contrast(90%); }
+    </style>
+    <link rel="preload" as="script" href="assets/particles.min.js+particlejs-snow.js.pagespeed.jc.JMVVFgZKqZ.js">
+    <title>Yuzuru</title>
+    <link rel="icon" type="image/ico" href="assets/icon.ico">
+    </head>
     <body>
-        <h1>Test</h1>
+      <noscript>
+      <meta HTTP-EQUIV="refresh" content="0;url='https://yuzuru10.github.io/?PageSpeed=noscript'" />
+    <style>
+    <!--table,div,span,font,p{display:none} --></style>
+    <div style="display:block">Please click <a href="https://yuzuru10.github.io/?PageSpeed=noscript">here</a> if you are not redirected within a few seconds.</div></noscript>
+    <script type="text/javascript" src="assets/lanyard.js"></script>
+    <div id="loading"></div>
+    <div id="wallpaper" fetchpriority="high"></div>
+    <div id="particles-js">
+      <canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="1369" height="949"></canvas>
+    </div>
+    <script type="text/javascript" src="assets/particles.min.js+particlejs-snow.js.pagespeed.jc.JMVVFgZKqZ.js"></script>
+    <script type="text/javascript" src="data:text/javascript,eval(mod_pagespeed_k0qnqDdzjd)%3B">eval(mod_pagespeed_k0qnqDdzjd);</script>
+    <script type="text/javascript" src="data:text/javascript,eval(mod_pagespeed_WTVS6sLd_n)%3B">eval(mod_pagespeed_WTVS6sLd_n);</script>
+    <div id="box" style="background-color: rgba(234, 234, 234, 0.6); --darkreader-inline-bgcolor: rgba(36, 39, 40, 0.6);" data-darkreader-inline-bgcolor="">
+    <div id="Profile">
+    <div id="Image"><script data-pagespeed-no-defer="">//<![CDATA[
+    (function(){for(var g="function"==typeof Object.defineProperties?Object.defineProperty:function(b,c,a){if(a.get||a.set)throw new TypeError("ES3 does not support getters and setters.");
+    b!=Array.prototype&&b!=Object.prototype&&(b[c]=a.value)},h="undefined"!=typeof window&&window===this?this:"undefined"!=typeof global&&null!=global?global:this,k=["String","prototype","repeat"],l=0;
+    l<k.length-1;l++){var m=k[l];m in h||(h[m]={});
+    h=h[m]}var n=k[k.length-1],p=h[n],q=p?p:function(b){var c;
+      if(null==this)throw new TypeError("The 'this' value for String.prototype.repeat must not be null or undefined");
+      c=this+"";
+      if(0>b||1342177279<b)throw new RangeError("Invalid count value");
+      b|=0;for(var a="";b;)if(b&1&&(a+=c),b>>>=1)c+=c;return a};
+      q!=p&&null!=q&&g(h,n,{configurable:!0,writable:!0,value:q});
+      var t=this;function u(b,c){var a=b.split("."),d=t;a[0]in d||!d.execScript||d.execScript("var "+a[0]);
+      for(var e;a.length&&(e=a.shift());)a.length||void 0===c?d[e]?d=d[e]:d=d[e]={}:d[e]=c};
+      function v(b){var c=b.length;if(0<c){for(var a=Array(c),d=0;d<c;d++)a[d]=b[d];
+        return a}return[]};
+        function w(b){var c=window;
+          if(c.addEventListener)c.addEventListener("load",b,!1);
+          else if(c.attachEvent)c.attachEvent("onload",b);
+          else{var a=c.onload;c.onload=function(){b.call(this);a&&a.call(this)}}};var x;function y(b,c,a,d,e){this.h=b;this.j=c;this.l=a;
+            this.f=e;this.g={height:window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight,width:window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth};
+            this.i=d;this.b={};this.a=[];this.c={}}function z(b,c){var a,d,e=c.getAttribute("data-pagespeed-url-hash");
+            if(a=e&&!(e in b.c))if(0>=c.offsetWidth&&0>=c.offsetHeight)a=!1;
+            else{d=c.getBoundingClientRect();var f=document.body;a=d.top+("pageYOffset"in window?window.pageYOffset:(document.documentElement||f.parentNode||f).scrollTop);
+            d=d.left+("pageXOffset"in window?window.pageXOffset:(document.documentElement||f.parentNode||f).scrollLeft);f=a.toString()+","+d;b.b.hasOwnProperty(f)?a=!1:(b.b[f]=!0,a=a<=b.g.height&&d<=b.g.width)}a&&(b.a.push(e),b.c[e]=!0)}y.prototype.checkImageForCriticality=function(b){b.getBoundingClientRect&&z(this,b)};
+            u("pagespeed.CriticalImages.checkImageForCriticality",function(b){x.checkImageForCriticality(b)});u("pagespeed.CriticalImages.checkCriticalImages",function(){A(x)});
+            function A(b){b.b={};for(var c=["IMG","INPUT"],a=[],d=0;d<c.length;
+            ++d)a=a.concat(v(document.getElementsByTagName(c[d])));
+            if(a.length&&a[0].getBoundingClientRect){for(d=0;c=a[d];++d)z(b,c);
+              a="oh="+b.l;b.f&&(a+="&n="+b.f);
+              if(c=!!b.a.length)for(a+="&ci="+encodeURIComponent(b.a[0]),d=1;
+              d<b.a.length;++d){var e=","+encodeURIComponent(b.a[d]);131072>=a.length+e.length&&(a+=e)}b.i&&(e="&rd="+encodeURIComponent(JSON.stringify(B())),131072>=a.length+e.length&&(a+=e),c=!0);
+              C=a;if(c){d=b.h;b=b.j;var f;
+                if(window.XMLHttpRequest)f=new XMLHttpRequest;
+                else if(window.ActiveXObject)try{f=new ActiveXObject("Msxml2.XMLHTTP")}catch(r){try{f=new ActiveXObject("Microsoft.XMLHTTP")}catch(D){}}f&&(f.open("POST",d+(-1==d.indexOf("?")?"?":"&")+"url="+encodeURIComponent(b)),f.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),f.send(a))}}}function B(){var b={},c;
+                c=document.getElementsByTagName("IMG");if(!c.length)return{};
+                var a=c[0];if(!("naturalWidth"in a&&"naturalHeight"in a))return{};
+                for(var d=0;a=c[d];++d){var e=a.getAttribute("data-pagespeed-url-hash");
+                e&&(!(e in b)&&0<a.width&&0<a.height&&0<a.naturalWidth&&0<a.naturalHeight||e in b&&a.width>=b[e].o&&a.height>=b[e].m)&&(b[e]={rw:a.width,rh:a.height,ow:a.naturalWidth,oh:a.naturalHeight})}return b}var C="";
+                u("pagespeed.CriticalImages.getBeaconData",function(){return C});
+                u("pagespeed.CriticalImages.Run",function(b,c,a,d,e,f){var r=new y(b,c,a,e,f);
+                  x=r;d&&w(function(){window.setTimeout(function(){A(r)},0)})});})();
+                  pagespeed.CriticalImages.Run('/mod_pagespeed_beacon','https://yuzuru10.github.io/','sR_VF2dg4R',true,false,'1R0xtuEN7N4');//]]>
+    </script>
+    <img src="assets/pp.jpg" id="img" loading="lazy" fetchpriority="high" data-pagespeed-url-hash="2816490505" data-pagespeed-onload="pagespeed.CriticalImages.checkImageForCriticality(this);" onload="var elem=this;if (this==window) elem=document.body;elem.setAttribute('data-pagespeed-loaded', 1)" data-pagespeed-loaded="1" height="270px"></div><p style="font-size:1.33em;text-shadow:1px 2px .1px #a9a9a9" class="other-font"><span class="ec ec-maple-leaf"></span> Hello there! <span class="ec ec-maple-leaf"></span></p>
+      <div id="spacer"></div>
+      <div id="Projects">
+        <div id="spacer"></div> 
+          <p style="font-size:1.15em;text-underline-offset:4px;text-decoration:underline dashed 2px #000"><span class="ec ec-file-folder"></span> <a href="https://github.com/yuzuru10">Github Profile</a></p>
+      </div>
+      <div id="spacer"></div>
+      <div id="Socials">
+        <p style="font-size:1.15em;text-underline-offset:4px;text-decoration:underline dashed 2px #000"></p>
+        <p><span class="ec ec-bird"></span> <a href="https://twitter.com/yufuzuru">Twitter</a></p>
+      </div>
+    </div>
+    </div>
+    <div id="audio-box">
+      <div id="audio-container">
+      <audio preload="auto" loop="" id="audi-owo" src="assets/audio.mp3"><source src="" id="surs"></audio>
+      <button onclick="setSong()"><i class="fas fa-chevron-right"></i></button> 
+      <button onclick='document.getElementById("audi-owo").play()'><i class="fas fa-play"></i></button> 
+      <button onclick='document.getElementById("audi-owo").pause()'><i class="fas fa-pause"></i></button> 
+      <button onclick='document.getElementById("audi-owo").volume+=.01'><i class="fas fa-chevron-up"></i></button> 
+      <button onclick='document.getElementById("audi-owo").volume-=.01'><i class="fas fa-chevron-down"></i></button><!-- 
+      <button onclick="smoothImageFadeOut();"><i class="fas fa-circle"></i></button> -->
+      <div id="progress"></div>
+    <p id="nowplaying"></p>
+      </div>
+    </div>
+    <script type="text/javascript" src="data:text/javascript,eval(mod_pagespeed_Hgd%24TnVluz)%3B">eval(mod_pagespeed_Hgd$TnVluz);</script>
+    <script type="text/javascript" src="assets/js_defer.I4cHjq6EEP.js"></script>
     </body>
-</html>
+    </html>
