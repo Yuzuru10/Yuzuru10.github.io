@@ -1,210 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="theme-dark" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your GitHub Pages</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            height: 100vh;
-            background-color: #121212;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        #animation-container {
-            position: relative;
-            width: 100%;
-            height: 100%;
-        }
-        
-        #spiral-container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-        }
-        
-        #spiral {
-            position: relative;
-            width: 0;
-            height: 0;
-            border-radius: 50%;
-            background: radial-gradient(circle, rgba(74, 158, 255, 1) 0%, rgba(0, 96, 223, 0.8) 50%, rgba(0, 96, 223, 0) 100%);
-            box-shadow: 0 0 50px 20px rgba(74, 158, 255, 0.5);
-            animation: spiral-grow 2.5s ease-in-out forwards, spiral-vanish 1s ease-in-out 2.5s forwards;
-        }
-        
-        .spiral-ring {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            border-radius: 50%;
-            border: 4px solid transparent;
-            border-top: 4px solid rgba(74, 158, 255, 0.9);
-            border-bottom: 4px solid rgba(0, 96, 223, 0.9);
-            animation: spiral-spin 2.5s ease-in-out forwards;
-        }
-        
-        #ring1 {
-            width: 50px;
-            height: 50px;
-        }
-        
-        #ring2 {
-            width: 100px;
-            height: 100px;
-            animation-delay: 0.2s;
-        }
-        
-        #ring3 {
-            width: 150px;
-            height: 150px;
-            animation-delay: 0.4s;
-        }
-        
-        #ring4 {
-            width: 200px;
-            height: 200px;
-            animation-delay: 0.6s;
-        }
-        
-        #fox {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) scale(0);
-            width: 100px;
-            height: 100px;
-            opacity: 0;
-            z-index: 10;
-            filter: drop-shadow(0 0 10px rgba(255, 124, 62, 0.7));
-            animation: fox-emerge 1s ease-in-out 3s forwards, 
-                       fox-jump 1.5s ease-in-out 4s forwards;
-        }
-        
-        @keyframes spiral-grow {
-            0% {
-                width: 0;
-                height: 0;
-            }
-            50% {
-                width: 200px;
-                height: 200px;
-            }
-            100% {
-                width: 300vw;
-                height: 300vh;
-            }
-        }
-        
-        @keyframes spiral-vanish {
-            0% {
-                opacity: 1;
-                transform: scale(1);
-            }
-            100% {
-                opacity: 0;
-                transform: scale(1.2);
-            }
-        }
-        
-        @keyframes spiral-spin {
-            0% {
-                transform: translate(-50%, -50%) rotate(0deg);
-                opacity: 0;
-            }
-            20% {
-                opacity: 1;
-            }
-            100% {
-                transform: translate(-50%, -50%) rotate(1080deg);
-                opacity: 0;
-                width: 100vw;
-                height: 100vw;
-            }
-        }
-        
-        @keyframes fox-emerge {
-            0% {
-                opacity: 0;
-                transform: translate(-50%, -50%) scale(0) rotate(0deg);
-                top: 50%;
-            }
-            60% {
-                opacity: 0.8;
-                transform: translate(-50%, -50%) scale(0.8) rotate(180deg);
-                top: 45%;
-            }
-            100% {
-                opacity: 1;
-                transform: translate(-50%, -50%) scale(1) rotate(360deg);
-                top: 40%;
-            }
-        }
-        
-        @keyframes fox-jump {
-            0% {
-                top: 40%;
-                left: 50%;
-                transform: translate(-50%, -50%) scale(1) rotate(0deg);
-            }
-            30% {
-                top: 20%;
-                left: 60%;
-                transform: translate(-50%, -50%) scale(1.2) rotate(20deg);
-            }
-            60% {
-                top: 50%;
-                left: 75%;
-                transform: translate(-50%, -50%) scale(1) rotate(-10deg);
-            }
-            100% {
-                top: 80%;
-                left: 85%;
-                transform: translate(-50%, -50%) scale(1) rotate(0deg);
-            }
-        }
-        
-        #content {
-            position: relative;
-            z-index: 2;
-            opacity: 0;
-            animation: show-content 1s ease-in-out 5.5s forwards;
-        }
-        
-        @keyframes show-content {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
-        
-        /* Fox wagging tail animation after it sits in corner */
-        @keyframes wag-tail {
-            0% {
-                transform: rotate(0deg);
-            }
-            50% {
-                transform: rotate(15deg);
-            }
-            100% {
-                transform: rotate(0deg);
-            }
-        }
-    </style>
+    <title>Yuzuru_10</title>
+    <link rel="icon" type="image/ico" href="https://github.githubassets.com/favicons/favicon.png">
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
     <div id="animation-container">
@@ -216,60 +17,54 @@
                 <div id="ring4" class="spiral-ring"></div>
             </div>
         </div>
-        
-        <svg id="fox" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-            <!-- Fox body -->
-            <ellipse cx="100" cy="120" rx="50" ry="30" fill="#f77c3e" />
-            <!-- Fox head -->
-            <circle cx="65" cy="90" r="25" fill="#f77c3e" />
-            <!-- Fox ears -->
-            <polygon points="55,75 40,50 55,65" fill="#f77c3e" />
-            <polygon points="75,75 90,50 75,65" fill="#f77c3e" />
-            <!-- Fox tail -->
-            <path d="M 150 120 C 180 100 190 130 160 140 Z" fill="#f77c3e" class="fox-tail" />
-            <path d="M 150 120 C 180 100 190 130 160 140 Z" fill="#f77c3e" stroke="white" stroke-width="2" class="fox-tail" />
-            <!-- Fox face details -->
-            <circle cx="55" cy="85" r="3" fill="black" />
-            <circle cx="75" cy="85" r="3" fill="black" />
-            <ellipse cx="65" cy="95" rx="5" ry="3" fill="black" />
-            <!-- White fur details -->
-            <path d="M 65 100 C 60 110 70 110 65 100 Z" fill="white" />
-            <path d="M 150 120 C 170 110 180 125 160 130 Z" fill="white" class="fox-tail" />
-        </svg>
     </div>
 
-    <div id="content">
-        <!-- Your content goes here -->
-        <h1 style="color: white; font-family: Arial, sans-serif;">Welcome to My Page</h1>
+    <div id="greeting">
+        <h1 style="color: white;">~ ⛩️𝓦𝓮𝓵𝓬𝓸𝓶𝓮 𝓣𝓸 𝓜𝔂 𝓟𝓪𝓰𝓮!⛩️ ~ </h1>
+
+    </div>
+    <div id="profileimg" data-pagespeed-onload="pagespeed.CriticalImages.checkImageForCriticality(this);" onload="var elem=this;if (this==window) elem=document.body;elem.setAttribute('data-pagespeed-loaded', 1)" data-pagespeed-loaded="1">
+        <img src="https://avatars.githubusercontent.com/u/69855673?" id="profileimg" alt="Avatar" loading="lazy">
     </div>
 
+    <div id="about">
+        <pre>
+ <span class="title">Got a one-way ticket to the blues</span>
+ ───────────────────────────────────────────
+ <span class="label">Name</span>: Yuzuru
+ <span class="label">Surname</span>: Gulakan
+ <span class="label">Occupation</span>: Wannabe Hacker
+ <span class="label">Works On</span>: Linux,Android Kernels & Embedded Systems
+ <span class="label">E-Mail</span>: Yuzuru_10@proton.me
+ <span class="label">Memory</span>: 999.7 GiB / 1000 GiB <span class="red">(99%)</span>
+ <span class="label">OS Age</span>: 20 years
+ <span class="label">Mankind</span>: <span class="v1">Dead</span>
+ <span class="label">Blood</span>: <span class="v1">Fuel</span>
+ <span class="label">Hell</span>: <span class="v1">FULL</span>
+ ───────────────────────────────────────────
+        </pre>
+    </div>
+
+    <div id="gnupg">
+        <pre><a href="https://github.com/Yuzuru10/Yuzuru10.github.io/blob/main/assets/yuzuru-gpg.asc" class="title" download>GPG Key</a></pre>
+    </div>
+    <div id="social">
+        <pre><a href="https://github.com/Yuzuru10"class="title">😺 Github<a></pre>
+        <pre><a href="https://gitlab.com/Yuzuru10"class="title">🔶 GitLab</a></pre>
+        <pre><a href="https://linkedin.com/in/yuzuru-gülakan-481919275"class="title">📘 LinkedIn</a></pre>
+        <pre><a href="https://twitter.com/yuzururiverflow"class="title">🐦 Twitter / X</a></pre>
+        <pre></pre>
+    </div>
+    
+    <!-- This script handles the spiral animation -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const fox = document.getElementById('fox');
             const spiralContainer = document.getElementById('spiral-container');
-            const tailElements = document.querySelectorAll('.fox-tail');
-            
-            // Making sure the fox stays at the bottom right corner after animation
-            fox.addEventListener('animationend', function(e) {
-                if (e.animationName === 'fox-jump') {
-                    fox.style.animation = 'none';
-                    fox.style.top = '80%';
-                    fox.style.left = '85%';
-                    fox.style.transform = 'translate(-50%, -50%) scale(1)';
-                    
-                    // Add wagging tail animation to fox
-                    tailElements.forEach(tail => {
-                        tail.style.transformOrigin = '150px 120px';
-                        tail.style.animation = 'wag-tail 2s ease-in-out infinite';
-                    });
-                }
-            });
-            
-            // Remove spiral container after animations
             setTimeout(() => {
                 spiralContainer.style.display = 'none';
             }, 3500);
         });
     </script>
+    <script src="snow.js"></script>
 </body>
 </html>
